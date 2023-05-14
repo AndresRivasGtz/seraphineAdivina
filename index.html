@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seraphine Adivina</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <section>
+    <div class="box">
+        <div class="container">
+            <div class="panel">
+                <h2 class="title">Seraphine Adivina</h2>
+                <div>
+                    <img class="placeholder" id="placeholdero" src="./sera_icon.jpg" width="224" height="224">
+                    <img class="imag" src="#" id="input_image" width="224" height="224">
+                </div>
+                <div id="container-button">
+                    <div class="">	            
+                        <input class="butbut" type="file" name="fileupload" accept="image/*" onchange="cambio(event)">
+                    </div>	
+                    <div class="">			
+                        <input type="button" name="predict" onclick="predict_animal()" value="Predicción" class="butbut" type="submit">
+                    </div>
+                </div>
+            </div>
+            <div class="results">
+                <div class="cards">
+                    <div id="cardAbeja" class="card">
+                        <h2>Abeja</h2>
+                        <div class="barra">
+                            <p id="porAbeja"></p>
+                            <div id="progressAbeja" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardCamaron" class="card">
+                        <h2>Camarón</h2>
+                        <div class="barra">
+                            <p id="porCamaron"></p>
+                            <div id="progressCamaron" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardCaracol" class="card">
+                        <h2>Caracol</h2>
+                        <div class="barra">
+                            <p id="porCaracol"></p>
+                            <div id="progressCaracol" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardCatarina" class="card">
+                        <h2>Catarina</h2>
+                        <div class="barra">
+                            <p id="porCatarina"></p>
+                            <div id="progressCatarina" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardEscarabajo" class="card">
+                        <h2>Escarabajo</h2>
+                        <div class="barra">
+                            <p id="porEscarabajo"></p>
+                            <div id="progressEscarabajo" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardHormiga" class="card">
+                        <h2>Hormiga</h2>
+                        <div class="barra">
+                            <p id="porHormiga"></p>
+                            <div id="progressHormiga" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardLibelula" class="card">
+                        <h2>Libelula</h2>
+                        <div class="barra">
+                            <p id="porLibelula"></p>
+                            <div id="progressLibelula" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardLuciernaga" class="card">
+                        <h2>Luciernaga</h2>
+                        <div class="barra">
+                            <p id="porLuciernaga"></p>
+                            <div id="progressLuciernaga" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardMantis" class="card">
+                        <h2>Mantis</h2>
+                        <div class="barra">
+                            <p id="porMantis"></p>
+                            <div id="progressMantis" class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="cardOruga" class="card">
+                        <h2>Oruga</h2>
+                        <div class="barra">
+                            <p id="porOruga"></p>
+                            <div id="progressOruga" class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        document.getElementById("input_image").hidden=true;
+
+        function cambio(event){
+            document.getElementById("input_image").hidden=false;
+            document.getElementById("placeholdero").hidden=true;
+            display(event);
+        }
+    </script>
+    <script src="./mis-scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
+</body>
+</html>

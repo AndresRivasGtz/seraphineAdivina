@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder{
+    height: 224px;
+    width: 224px;
+    background: black;
+    border-radius: 20px;
+}
+
+.imag{
+    position:relative;
+    border-radius: 20px;
+    border: none;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgb(247, 136, 154), rgb(6, 184, 197));
+}
+
+.box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    position: relative;
+    min-width: 1024px;
+    min-height: 576px;
+    max-width: 720px;
+    max-height: 1280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    height: 100%;
+    width: 40%;
+    padding: 40px;
+    align-items: center;
+}
+
+.panel h2{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+
+}
+
+.panel h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: white;
+}
+
+.panel .butbut{
+    margin-top: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.results{
+    flex: 1;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/*background: linear-gradient(to left top, rgba(21, 221, 37, 0.5), rgba(12, 172, 38, 0.2));*/
+.card{
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    border-radius: 1rem;
+    margin: 10px 20px;
+    padding: 10px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.card h2{
+    flex: 2;
+    word-spacing: 2px;
+}
+
+.card .barra{
+    flex: 3;
+}
+
+.progress{
+    background: linear-gradient(to top right, #df65019c, #c70c69bd);
+    width: 0%;
+    height: 15%;
+    border-radius: 2px;
+}
